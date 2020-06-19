@@ -41,5 +41,4 @@ else
   echo Install wget or curl
 fi
 
-tar -xzf $tarname
-rm $tarname
+mv $tarname zsh.tar.gz

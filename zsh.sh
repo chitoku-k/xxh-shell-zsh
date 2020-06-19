@@ -10,6 +10,7 @@ if [ -f $CDIR/.zsh_dir ]; then
 fi
 
 if [ ! "$CDIR" = "$zsh_dir" ]; then
+  tar -xmf $CDIR/$zshbin/zsh.tar.gz -C $CDIR/$zshbin
   if [ "$XXH_VERBOSE" = '2' ]; then
     $CDIR/$zshbin/share/zsh/5.8/scripts/relocate
   else
